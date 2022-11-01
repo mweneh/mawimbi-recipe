@@ -10,9 +10,24 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2022_10_28_054638) do
+ActiveRecord::Schema[7.0].define(version: 2022_10_28_084040) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "recipes", force: :cascade do |t|
+    t.string "foodname"
+    t.string "image"
+    t.string "description"
+    t.string "ingredients"
+    t.string "tutorial"
+    t.string "country"
+    t.string "servings"
+    t.string "instructions"
+    t.integer "rating"
+    t.integer "user_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
 
   create_table "users", force: :cascade do |t|
     t.string "username"
