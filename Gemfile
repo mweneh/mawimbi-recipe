@@ -9,6 +9,8 @@ gem "rails", "~> 7.0.4"
 # Use postgresql as the database for Active Record
 gem "pg", "~> 1.1"
 
+gem 'faker'
+
 # Use the Puma web server [https://github.com/puma/puma]
 gem "puma", "~> 5.0"
 
@@ -48,3 +50,4 @@ group :development do
   # gem "spring"
 end
 
+gem 'rest-client', '~> 2.1'
